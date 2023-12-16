@@ -14,35 +14,37 @@ const LoginForm = () => {
   };
 
   return (
-    <div className='login-form-container'>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group controlId='formBasicEmail'>
-          <Form.Label>Username</Form.Label>
-          <Form.Control
-            type='text'
-            placeholder='Enter username'
-            name='username'
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </Form.Group>
+    <div class='signin'>
+      <div class='content'>
+        <h2>Sign In</h2>
 
-        <Form.Group controlId='formBasicPassword'>
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type='password'
-            placeholder='Password'
-            name='password'
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </Form.Group>
-        <Button variant='primary' type='submit'>
-          Login
-        </Button>
-      </Form>
+        <div class='form'>
+          <div class='inputBox'>
+            <input type='text' required>
+              {" "}
+              <i>Username</i>/
+            </input>
+          </div>
+
+          <div class='inputBox'>
+            <input type='password' required>
+              {" "}
+              <i>Password</i>/
+            </input>
+          </div>
+
+          <div class='links'>
+            {" "}
+            <a href='#'>Forgot Password</a> <a href='#'>Signup</a>
+          </div>
+
+          <div class='inputBox'>
+            <input type='submit' value='Login'>
+              /
+            </input>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
