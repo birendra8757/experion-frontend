@@ -162,8 +162,22 @@ const Sidebar = () => {
               Pages
             </Typography>
             <Item
-              title='Create User'
+              title='Create New Hr'
               to='/form'
+              icon={<PersonOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title='Create New Candidate'
+              to='/create-condidate'
+              icon={<PersonOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title='Add New Company'
+              to='/create-company'
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
